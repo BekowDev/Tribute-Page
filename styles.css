@@ -1,0 +1,153 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.6rem;
+}
+
+.wrapper,
+main {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+figure {
+    max-height: 100vh;
+    overflow: hidden;
+    font-size: 1.6rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+figure>img {
+    height: 100%;
+    width: 100%;
+    filter: brightness(40%);
+}
+
+figure>figcaption {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    padding: 0 20px;
+}
+
+figure>figcaption>h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    text-wrap: nowrap;
+}
+
+figure>figcaption>h2 {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+figure>figcaption>p {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+section {
+    color: #000;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 10px solid rgb(255, 255, 255);
+    background: #dddddd;
+}
+
+section>h3 {
+    padding: 50px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+section>ul {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+li>strong {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+blockquote {
+    max-width: 600px;
+}
+
+section>h3:last-child {
+    padding: 50px 0 20px;
+}
+
+section>h3>a {
+    color: #477ca7;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 460px) {
+    section {
+        font-size: 12px;
+    }
+
+    section>h3 {
+        font-size: 16px;
+        padding: 30px 0;
+    }
+
+    section>ul {
+        gap: 10px
+    }
+
+    html {
+        font-size: 7px;
+    }
+}
+
+
+#main {
+    /* Your CSS styles for the main element here */
+}
+
+#title {
+    /* Your CSS styles for the title element here */
+}
+
+#img-div {
+    /* Your CSS styles for the img-div element here */
+    text-align: center;
+    /* To center its children horizontally */
+}
+
+#image {
+    /* Your CSS styles for the image element here */
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    /* To center the image horizontally */
+}
+
+#img-caption {
+    /* Your CSS styles for the img-caption element here */
+}
+
+#tribute-info {
+    /* Your CSS styles for the tribute-info element here */
+}
+
+#tribute-link {
+    /* Your CSS styles for the tribute-link element here */
+}
